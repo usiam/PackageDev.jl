@@ -1,19 +1,16 @@
-using PackageDev
-using Test
-
 ## ADD TESTS HERE ##
 
-# works if exported
-my_f(2, 1)
+# # works if exported
+# my_f(2, 1)
 
-# have to specify where the function lives if not exported
-PackageDev.my_f(2, 1)
+# # have to specify where the function lives if not exported
+# PackageDev.my_f(2, 1)
+# PackageDev.derivative_of_my_f(2, 1)
 
-@testset "PackageDev.jl" begin
-    # my_f(x, y) = 2x + 3y
-    @test my_f(2, 1) == 7
-    @test my_f(2, 3) == 13
-    @test my_f(1, 3) == 11 # 2 + 9 = 11
+using SafeTestsets
+
+@safetestset "My f tests" begin
+    include("my_f_tests.jl")
 end
 
 # to test open the REPL and go to pkg using ] and then run `test <PackageName>`
