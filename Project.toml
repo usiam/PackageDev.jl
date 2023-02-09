@@ -1,0 +1,13 @@
+name = "PackageDev"
+uuid = "fb384a41-1083-43fc-825b-8bb5acaa4158"
+authors = ["Uzair Tahamid Siam"]
+version = "0.1.0"
+
+[compat]
+julia = "1"
+
+[extras]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test"]
