@@ -3,6 +3,9 @@ uuid = "fb384a41-1083-43fc-825b-8bb5acaa4158"
 authors = ["Uzair Tahamid Siam"]
 version = "0.1.0"
 
+[deps]
+Revise = "295af30f-e4ad-537b-8983-00126c2a3abe"
+
 [compat]
 julia = "1"
 
